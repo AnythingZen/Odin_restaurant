@@ -1,3 +1,4 @@
 import './style.css';
+import { initialPageLoad } from './initialPageLoad';
 
-alert('hi');
+initialPageLoad();

@@ -1,0 +1,81 @@
+* {
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #ffc93c;
+    --secondary-color: #ff9a3c;
+}
+
+body {
+    height: 100vh;
+    background: url(assets/textured-paper-1920x1080.png);
+    object-fit: cover;
+}
+
+.nav-bar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar>button {
+    font-weight: bold;
+    font-size: 1.6rem;
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-bar>button:hover {
+    background-color: var(--main-color);
+    border: 2px solid var(--secondary-color);
+}
+
+#content {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background: url(assets/restaurant.png) no-repeat;
+    background-position: 50% 30%;
+
+    position: relative;
+}
+
+.title {
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+    padding: 5px;
+
+    color: var(--main-color);
+    text-shadow: 0 0 3px black;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+    text-shadow: 0 0 3px black;
+
+    position: absolute;
+    top: 67%;
+}
+
