@@ -1,7 +1,7 @@
 export function initialPageLoad () {
     const content = document.getElementById('content');
     const contentTitle = document.createElement('h1');
-    const contentPara = document.createElement('p')
+    const contentPara = document.createElement('p');
 
     contentTitle.className = 'title';
     contentPara.className = 'quote';
