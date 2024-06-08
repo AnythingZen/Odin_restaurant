@@ -1,5 +1,7 @@
 import './style.css';
 import { initialPageLoad } from './initialPageLoad';
+import { menuPageLoad } from './menuPageLoad';
+import { aboutPageLoad } from './aboutPageLoad';
 
 initialPageLoad();
 
@@ -12,10 +14,10 @@ initialPageLoad();
     buttonsContainer.addEventListener('click', (e) => {
         
         const nav = e.target.className;
-        contentStyleReset();
+        
         // check if in nav, and whether nav is in same page
         if (nav && nav != currentPage) {
-
+            contentStyleReset();
             switch (nav) {
                 case 'home':
                     content.style.cssText = homePageStyle;

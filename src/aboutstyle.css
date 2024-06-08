@@ -1,0 +1,56 @@
+.aboutTab {
+    width: 90vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.aboutTitle {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4rem;
+
+    width: 100%;
+}
+
+.aboutTab>p {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+form>p {
+    display: block;
+}
+
+#name, #submit, #message {
+    border: 2px solid #ffc93c;
+    border-radius: 6px;
+    font-size: 2rem;
+}
+
+#submit {
+    min-width: 90px;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#nametext, #messagetext {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
